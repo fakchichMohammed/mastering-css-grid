@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Define the grid container */
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; /* Three equal-sized columns */
+        grid-template-rows: 100px 200px 150px; /* Fixed heights for rows */
+        grid-gap: 10px; /* Gap between grid cells */
+        grid-template-areas:
+          "header header header"
+          "sidebar content content"
+          "footer footer footer";
+      }
+
+      /* Style for grid items */
+      .grid-item {
+        padding: 20px;
+        color: white;
+        font-size: 20px;
+      }
+
+      /* Style for specific grid areas */
+      .header {
+        background-color: #3498db; /* Blue color */
+      }
+
+      .sidebar {
+        background-color: #27ae60; /* Green color */
+      }
+
+      .content {
+        background-color: #f39c12; /* Orange color */
+      }
+
+      .footer {
+        background-color: #e74c3c; /* Red color */
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="grid-container">
+      <div class="grid-item header">Header</div>
+      <div class="grid-item sidebar">Sidebar</div>
+      <div class="grid-item content">Content</div>
+      <div class="grid-item footer">Footer</div>
+    </div>
+  </body>
+</html>

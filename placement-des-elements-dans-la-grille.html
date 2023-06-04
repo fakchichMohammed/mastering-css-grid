@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Définir le conteneur de la grille */
+    .grid-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Trois colonnes de largeur égale */
+      grid-template-rows: 100px 100px; /* Deux lignes de hauteur fixe */
+      grid-gap: 10px; /* Espacement entre les éléments de la grille */
+    }
+
+    /* Définir les styles des éléments de la grille */
+    .grid-item {
+      padding: 20px;
+      font-size: 18px;
+      text-align: center;
+      color: #fff;
+    }
+
+    /* Spécifier les styles individuels pour chaque élément de la grille */
+    #item1 {
+      grid-column: 1 / 3; /* Commence à la colonne 1 et se termine à la colonne 3 */
+      grid-row: 1; /* Occupe la première ligne */
+      background-color: #FF6384; /* Rose */
+    }
+
+    #item2 {
+      grid-column: 2; /* Commence et se termine à la colonne 2 */
+      grid-row: 2; /* Occupe la deuxième ligne */
+      background-color: #36A2EB; /* Bleu */
+    }
+
+    #item3 {
+      grid-column: 3; /* Commence et se termine à la colonne 3 */
+      grid-row: 1 / 3; /* Commence à la ligne 1 et se termine à la ligne 3 */
+      background-color: #FFCE56; /* Jaune */
+    }
+  </style>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-item" id="item1">1</div>
+    <div class="grid-item" id="item2">2</div>
+    <div class="grid-item" id="item3">3</div>
+  </div>
+</body>
+</html>

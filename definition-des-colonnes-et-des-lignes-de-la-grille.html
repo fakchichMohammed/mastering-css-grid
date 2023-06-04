@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Définir la grille container */
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Deux colonnes de largeur égale */
+        grid-template-rows: auto 1fr auto; /* Une ligne en haut, une ligne flexible au milieu, une ligne en bas */
+        grid-gap: 20px; /* Espacement de 20 pixels entre les éléments de la grille */
+      }
+
+      /* Styles pour chaque élément de la grille */
+      .grid-item {
+        padding: 20px; /* Espacement intérieur de 20 pixels pour tous les éléments */
+        color: #fff; /* Couleur du texte pour tous les éléments */
+        font-weight: bold; /* Texte en gras pour tous les éléments */
+        text-align: center; /* Centrer le texte à l'intérieur de chaque élément */
+      }
+
+      /* Styles spécifiques à certains éléments */
+      .header {
+        background-color: #ff6384; /* Couleur de fond pour l'élément d'en-tête */
+        grid-column: 1 / span 2; /* L'élément s'étend sur les deux colonnes */
+      }
+
+      .sidebar {
+        background-color: #36a2eb; /* Couleur de fond pour l'élément de la barre latérale */
+        grid-row: 2 / span 2; /* L'élément s'étend sur deux lignes */
+      }
+
+      .main-content {
+        background-color: #ffce56; /* Couleur de fond pour le contenu principal */
+        grid-column: 2; /* L'élément est positionné dans la deuxième colonne */
+      }
+
+      .item-4 {
+        background-color: #4bc0c0; /* Couleur de fond pour l'élément 4 */
+      }
+
+      .item-5 {
+        background-color: #9966ff; /* Couleur de fond pour l'élément 5 */
+      }
+
+      .footer {
+        background-color: #ff9f40; /* Couleur de fond pour l'élément de pied de page */
+        grid-column: 1 / span 2; /* L'élément s'étend sur les deux colonnes */
+      }
+
+      .description {
+        text-align: center; /* Centrer le texte de la description */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item header">Header</div>
+      <!-- Élément d'en-tête -->
+      <div class="grid-item sidebar">Sidebar</div>
+      <!-- Élément de la barre latérale -->
+      <div class="grid-item main-content">Main Content</div>
+      <!-- Contenu principal -->
+      <div class="grid-item item-4">Item 4</div>
+      <!-- Élément générique -->
+      <div class="grid-item item-5">Item 5</div>
+      <!-- Élément générique -->
+      <div class="grid-item footer">Footer</div>
+      <!-- Élément de pied de page -->
+    </div>
+  </body>
+</html>
